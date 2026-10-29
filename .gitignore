@@ -1,0 +1,16 @@
+# Que es: lista de archivos que git NO debe subir.
+# Que hace: protege secretos (.env, JSON de Google Cloud, claves de Terraform).
+# Las lineas de JSON evitan publicar la llave de la cuenta de servicio.
+
+.env
+__pycache__/
+*.pyc
+.venv/
+terraform/.terraform/
+terraform/terraform.tfvars
+*.tfstate
+*.tfstate.*
+*.tfvars
+*-*.json
+google-credentials.json
+credentials.json
