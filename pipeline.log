@@ -1,0 +1,56 @@
+﻿2026-09-23 21:34:57 | === INICIO AUTOMATIZACION PIPELINE URBANRUSH ===
+2026-09-23 21:35:17 | [OK] Python: C:\Users\stive\AppData\Local\Programs\Python\Python312\python.exe
+2026-09-23 21:35:17 | >> Instalando dependencias (requirements.txt)...
+2026-09-23 21:35:22 | [OK] Dependencias instaladas/verificadas
+2026-09-23 21:35:22 | >> [conexion] ejecutando: python conexion.py
+     Intentando conectar a MongoDB Atlas...
+     Conexion exitosa a MongoDB Atlas!
+     Conexion cerrada.
+2026-09-23 21:35:26 |    [OK] conexion
+2026-09-23 21:35:26 | >> [dashboard] ejecutando: python scripts/dashboard_monitoreo.py
+     [OK] Conectado a MongoDB Atlas (base: urbanrush_db)
+     ======================================================================
+     ESTADISTICAS DEL SISTEMA (MongoDB Atlas)
+     ======================================================================
+       Bases de datos del cluster   : -
+       Colecciones en urbanrush_db: 9
+       Documentos totales           : 363319
+       DataSize                     : 187.96 MB
+       StorageSize                  : 62.02 MB
+       clientes                  5,001 docs      1.41 MB
+       productos                   996 docs      0.24 MB
+       repartidores                301 docs      0.06 MB
+       pedidos                  50,071 docs     32.59 MB
+       pedidos_analiticos      150,293 docs     95.85 MB
+       dim_tiempo                  367 docs      0.04 MB
+       dim_cliente               5,001 docs      1.02 MB
+       dim_producto                996 docs      0.15 MB
+       fact_ventas             150,293 docs     56.59 MB
+     
+     ======================================================================
+     METRICAS ANALITICAS (Data Warehouse / OLAP)
+     ======================================================================
+       KPIs:
+         Ingresos totales (COP)     274,603,026,156.96
+         Lineas de venta            150,293.00
+         Clientes unicos            5,001.00
+         Ticket promedio (COP)      1,827,117.87
+     
+       Ventas por metodo de pago: 6 metodos
+       Ventas mensuales: 13 periodos
+       Top 10 productos por ingresos
+       Segmentos de clientes: 3
+     
+     ======================================================================
+     GENERANDO IMAGEN DEL DASHBOARD...
+     ======================================================================
+     [OK] Imagen exportada: C:\Users\stive\Documents\parcial-bd\dashboard_arquitectura.png
+     
+     ======================================================================
+     DASHBOARD COMPLETADO | Tiempo total: 9.72 s
+     ======================================================================
+2026-09-23 21:35:40 |    [OK] dashboard
+2026-09-23 21:35:40 | === RESUMEN ===
+2026-09-23 21:35:40 |   conexion               OK
+2026-09-23 21:35:40 |   dashboard              OK
+2026-09-23 21:35:40 | [OK] Pipeline completado sin errores. Log: C:\Users\stive\Documents\parcial-bd\pipeline.log
